@@ -7,11 +7,63 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="estilo.css">
+
+    <style>       
+      
+
+        .conteudo {
+            display: inline-flex;
+            border-bottom: 4px solid #EFEFEF;
+            border-radius: 5px;
+            
+            align-items: center;
+            
+        }
+
+        .conteudo img {
+            
+            height: 50px;
+            filter: drop-shadow(0px 0px 1px #4b4b50);
+            animation: flutuar 3s linear infinite;
+            padding: 1px;
+            
+        }
+
+        @keyframes flutuar {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .conteudo img:nth-child(2) {
+            animation-delay: .2s;
+        }
+
+        .conteudo img:nth-child(3) {
+            animation-delay: .4s;
+        }
+
+        .conteudo img:nth-child(4) {
+            animation-delay: .6s;
+        }
+
+        .conteudo img:nth-child(5) {
+            animation-delay: .8s;
+        }
+    </style>
 </head>
 <body>
+    
     <!-- MENU ENCABEZADO -->
     <div class="contenedor-header">
         <header>
+
             <div class="logo">
                 <a href="#">Ivan Z</a>
             </div>
@@ -39,13 +91,24 @@
             </div>
             <h1>Ivan Zuñiga</h1>
             <h2>Ingeniero de Software - Ingeniero En Proceso</h2>
-            <div class="redes">
-                <a href="https://www.facebook.com/profile.php?id=100001447042197"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://github.com/ivannZu"><i class="fa-brands fa-github"></i></a>
+            <br>
+            <br>
+            
+                <div class="conteudo">
+                    <br>
+                    <br>
 
-                <a href="https://www.instagram.com/ivann_z.v/"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i class="fa-brands fa-google"></i></a>
+
+        
+                   
+                <a href="https://www.instagram.com/ivann_z.v/"> <img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png"> </a>
+                
+                <a href="https://github.com/ivannZu"> <img  src="https://cdn.iconscout.com/icon/free/png-256/github-3691248-3073768.png"></a>
+              
+                <a href="google.com"> <img  src="https://static.macupdate.com/products/48672/l/head-for-gmail-logo.png?v=1568318326"></a>
+                <a href="google.com"><img  src="https://cdn-icons-png.flaticon.com/512/145/145807.png"></a>
+              
+          
             </div>
         </div>
     </section>
